@@ -21,22 +21,38 @@ RUN apt-get update && apt-get install -y \
     tigervnc-common \
     net-tools \
     xterm \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    libglfw3-dev \
+    libxinerama-dev \
+    libxcursor-dev \
+    libxi-dev
 
 # Update rosdep
 RUN rosdep update
 
 # Clone unitree_ros2
-RUN git clone https://github.com/unitreerobotics/unitree_ros2
+RUN git clone https://github.com/unitreerobotics/unitree_ros2 ~/unitree_ros2
 
 # Compile unitree_ros2
-RUN bash -c "cd /unitree_ros2/cyclonedds_ws/src && \
+RUN bash -c "cd ~/unitree_ros2/cyclonedds_ws/src && \
     git clone https://github.com/ros2/rmw_cyclonedds -b foxy && \
     git clone https://github.com/eclipse-cyclonedds/cyclonedds -b releases/0.10.x && \
     cd .. && \
     colcon build --packages-select cyclonedds && \
     source /opt/ros/foxy/setup.bash && \
     colcon build"
+
+# Compile unitree_sdk2
+RUN bash -c "git clone https://github.com/unitreerobotics/unitree_sdk2.git /opt/unitree_robotics && \
+    cd /opt/unitree_robotics && \
+    mkdir build && \
+    cd build && \
+    cmake .. -DCMAKE_INSTALL_PREFIX=/opt/unitree_robotics && \
+    make install"
+
+# Install cyclonedds
+
+
 
 # Create workspace directory
 WORKDIR /ws
