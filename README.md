@@ -1,7 +1,15 @@
-# ROS2_Docker
+## ROS2 Docker for Unitree Robotics Majoco simulation
 
-## Attention
+This repository is for the simulation of Unitree Robotics with ROS2 and Mujoco. ROS2-foxy, Unitree_SDK2, and Mujoco are installed in the Docker container.
+Following the instructions below, you can setup the Docker container and start the simulation.
+
 ---
+## Prerequisites
+- [Docker](https://docs.docker.com/get-docker/)
+
+---
+## Attention
+
 For Intel processors, please comment out the following line in the Dockerfile:
 ```bash
 # ENV CFLAGS="-march=armv8.6-a"
@@ -19,23 +27,30 @@ ENV CXXFLAGS="-march=armv8.3-a"
 ---
 ## Installation
 
-### Setup the Docker Container
+#### Setup the Docker Container
 ```bash
 ./setup_dev.sh
 ```
 
-### Start the Docker Container
+#### Start the Docker Container
 ```bash
 ./start_dev.sh
 ```
 
-### Stop the Docker Container
+#### Stop the Docker Container
 ```bash
 ./stop_dev.sh
 ```
 
-### Source the Unitree ROS2 Environment
+#### Source the Unitree ROS2 Environment
 ```bash
 source ~/unitree_ros2/setup.sh
 ```
+
+#### Run the simulation
+```bash
+cd /opt/unitree_mujoco/simulate/build
+./unitree_mujoco
+```
+
 ---
