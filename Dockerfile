@@ -1,5 +1,15 @@
 FROM ros:foxy-ros-base
 
+# Update GCC
+RUN apt-get update && apt-get install -y \
+    gcc-10 \
+    g++-10 \
+    && rm -rf /var/lib/apt/lists/*
+
+# For Arm processors, please modify the following line to the native architecture. If not, please comment out the following line
+ENV CFLAGS="-march=armv8.3-a"
+ENV CXXFLAGS="-march=armv8.3-a"
+
 # Install build tools and ROS dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -21,11 +31,13 @@ RUN apt-get update && apt-get install -y \
     tigervnc-common \
     net-tools \
     xterm \
-    && rm -rf /var/lib/apt/lists/* \
     libglfw3-dev \
     libxinerama-dev \
     libxcursor-dev \
-    libxi-dev
+    libyaml-cpp-dev \
+    libxi-dev \
+    libeigen3-dev \
+    && rm -rf /var/lib/apt/lists/* 
 
 # Update rosdep
 RUN rosdep update
@@ -50,9 +62,23 @@ RUN bash -c "git clone https://github.com/unitreerobotics/unitree_sdk2.git /opt/
     cmake .. -DCMAKE_INSTALL_PREFIX=/opt/unitree_robotics && \
     make install"
 
-# Install cyclonedds
+# Install mujoco-3.2.7
+RUN bash -c "git clone https://github.com/google-deepmind/mujoco.git /opt/mujoco && \
+    cd /opt/mujoco && \
+    mkdir build install && \
+    cd build && \
+    cmake /opt/mujoco && \
+    cmake --build . && \
+    cmake /opt/mujoco -DCMAKE_INSTALL_PREFIX=/opt/mujoco/install && \
+    cmake --build . --target install"
 
-
+# Install unitree_mujoco
+RUN bash -c "git clone https://github.com/unitreerobotics/unitree_mujoco.git /opt/unitree_mujoco && \
+    cd /opt/unitree_mujoco/simulate && \
+    mkdir build && \
+    cd build && \
+    cmake .. -DCMAKE_PREFIX_PATH=/opt/mujoco/install && \
+    make -j4"
 
 # Create workspace directory
 WORKDIR /ws
