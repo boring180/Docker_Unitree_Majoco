@@ -1,0 +1,106 @@
+[0.169s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.169s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb2504100>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb2504100>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb2504610>)
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.185s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.186s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.186s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.186s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ws/go2_ws/src'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.199s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(movement) by extension 'ros'
+[0.202s] DEBUG:colcon.colcon_core.package_identification:Package 'movement' with type 'ros.ament_cmake' and name 'movement'
+[0.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'movement' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'movement' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/go2_ws/src/build/movement', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/go2_ws/src/install/movement', 'merge_install': False, 'path': '/ws/go2_ws/src/movement', 'symlink_install': False, 'test_result_base': None}
+[0.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.215s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.215s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/go2_ws/src/movement' with build type 'ament_cmake'
+[0.215s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/go2_ws/src/movement'
+[0.218s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.218s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.218s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[2.055s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/go2_ws/src/build/movement' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[2.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(movement)
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement' for CMake module files
+[2.090s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement' for CMake config files
+[2.091s] Level 1:colcon.colcon_core.shell:create_environment_hook('movement', 'cmake_prefix_path')
+[2.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/go2_ws/src/install/movement/share/movement/hook/cmake_prefix_path.ps1'
+[2.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/go2_ws/src/install/movement/share/movement/hook/cmake_prefix_path.dsv'
+[2.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/go2_ws/src/install/movement/share/movement/hook/cmake_prefix_path.sh'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement/lib'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement/bin'
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement/lib/pkgconfig/movement.pc'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement/lib/python3.8/site-packages'
+[2.096s] Level 1:colcon.colcon_core.environment:checking '/ws/go2_ws/src/install/movement/bin'
+[2.096s] INFO:colcon.colcon_core.shell:Creating package script '/ws/go2_ws/src/install/movement/share/movement/package.ps1'
+[2.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/go2_ws/src/install/movement/share/movement/package.dsv'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/ws/go2_ws/src/install/movement/share/movement/package.sh'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/ws/go2_ws/src/install/movement/share/movement/package.bash'
+[2.099s] INFO:colcon.colcon_core.shell:Creating package script '/ws/go2_ws/src/install/movement/share/movement/package.zsh'
+[2.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/go2_ws/src/install/movement/share/colcon-core/packages/movement)
+[2.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[2.111s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.116s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.116s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.116s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.116s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.117s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[2.118s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.118s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/go2_ws/src/install/local_setup.ps1'
+[2.120s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/go2_ws/src/install/_local_setup_util_ps1.py'
+[2.121s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/go2_ws/src/install/setup.ps1'
+[2.122s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/go2_ws/src/install/local_setup.sh'
+[2.123s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/go2_ws/src/install/_local_setup_util_sh.py'
+[2.124s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/go2_ws/src/install/setup.sh'
+[2.125s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/go2_ws/src/install/local_setup.bash'
+[2.126s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/go2_ws/src/install/setup.bash'
+[2.127s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/go2_ws/src/install/local_setup.zsh'
+[2.129s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/go2_ws/src/install/setup.zsh'

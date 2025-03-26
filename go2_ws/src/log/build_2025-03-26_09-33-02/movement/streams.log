@@ -1,0 +1,183 @@
+[0.017s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[0.070s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.090s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.199s] -- Found unitree_go: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+[0.213s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.216s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.284s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.369s] -- Found unitree_api: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+[0.407s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.424s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.426s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.568s] -- Configuring done
+[0.626s] -- Generating done
+[0.637s] -- Build files have been written to: /ws/go2_ws/src/build/movement
+[0.692s] [ 11%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[0.719s] [ 77%] Built target back_and_forth
+[0.723s] [ 77%] Built target keyboard_control
+[2.062s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:11:1:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadControl[m[K’ does not name a type
+[2.062s]    11 | [01;31m[KGamepadControl[m[K::GamepadControl() : Node("gamepad_controller"){
+[2.062s]       | [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.063s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:20:6:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadControl[m[K’ has not been declared
+[2.063s]    20 | void [01;31m[KGamepadControl[m[K::timerCallback()
+[2.063s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.064s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In function ‘[01m[Kvoid timerCallback()[m[K’:
+[2.064s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadInput[m[K’ was not declared in this scope
+[2.064s]    22 |     [01;31m[KGamepadInput[m[K input;
+[2.064s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.064s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput[m[K’ was not declared in this scope
+[2.064s]    24 |     [01;31m[Kinput[m[K = getGamepadInput();
+[2.064s]       |     [01;31m[K^~~~~[m[K
+[2.064s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:13:[m[K [01;31m[Kerror: [m[K‘[01m[KgetGamepadInput[m[K’ was not declared in this scope
+[2.064s]    24 |     input = [01;31m[KgetGamepadInput[m[K();
+[2.065s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.065s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.065s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.066s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.066s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.066s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.066s]    29 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.066s]       |                 [01;31m[K^~~~[m[K
+[2.066s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.066s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.066s]    29 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.067s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.067s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.067s]    29 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.067s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.067s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.067s]    29 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.067s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.067s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.067s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.068s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.068s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.069s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.069s]    29 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.069s]       |                 [01;31m[K^~~~[m[K
+[2.069s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:29:17:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.069s]    29 |     RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
+[2.069s]       |                 [01;31m[K^~~~[m[K
+[2.069s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsportClient_[m[K’ was not declared in this scope; did you mean ‘[01m[KSportClient[m[K’?
+[2.069s]    30 |     [01;31m[KsportClient_[m[K.Move(reqMsg_, vx, vy, vyaw);
+[2.069s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.069s]       |     [32m[KSportClient[m[K
+[2.070s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:30:23:[m[K [01;31m[Kerror: [m[K‘[01m[KreqMsg_[m[K’ was not declared in this scope
+[2.070s]    30 |     sportClient_.Move([01;31m[KreqMsg_[m[K, vx, vy, vyaw);
+[2.070s]       |                       [01;31m[K^~~~~~~[m[K
+[2.070s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[KreqPuber_[m[K’ was not declared in this scope
+[2.070s]    31 |     [01;31m[KreqPuber_[m[K->publish(reqMsg_);
+[2.070s]       |     [01;31m[K^~~~~~~~~[m[K
+[2.070s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K At global scope:
+[2.070s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:6:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadControl[m[K’ has not been declared
+[2.070s]    34 | void [01;31m[KGamepadControl[m[K::getGamepadInput(GamepadInput &input)
+[2.071s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.071s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:38:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KgetGamepadInput[m[K’ declared void
+[2.071s]    34 | amepadControl::getGamepadInput([01;31m[KGamepadInput[m[K &input)
+[2.071s]       |                                [01;31m[K^~~~~~~~~~~~[m[K
+[2.071s] 
+[2.071s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:38:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadInput[m[K’ was not declared in this scope
+[2.071s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kinput[m[K’ was not declared in this scope
+[2.072s]    34 | :getGamepadInput(GamepadInput &[01;31m[Kinput[m[K)
+[2.072s]       |                                [01;31m[K^~~~~[m[K
+[2.072s] 
+[2.072s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:40:6:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadControl[m[K’ has not been declared
+[2.072s]    40 | void [01;31m[KGamepadControl[m[K::stateCallback(unitree_go::msg::SportModeState::SharedPtr data)
+[2.072s]       |      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.072s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In function ‘[01m[Kvoid stateCallback(unitree_go::msg::SportModeState_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.072s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:43:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentX_[m[K’ was not declared in this scope
+[2.072s]    43 |     [01;31m[KcurrentX_[m[K = data->position[0];
+[2.073s]       |     [01;31m[K^~~~~~~~~[m[K
+[2.073s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentY_[m[K’ was not declared in this scope
+[2.073s]    44 |     [01;31m[KcurrentY_[m[K = data->position[1];
+[2.073s]       |     [01;31m[K^~~~~~~~~[m[K
+[2.073s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcurrentYaw_[m[K’ was not declared in this scope
+[2.073s]    45 |     [01;31m[KcurrentYaw_[m[K = data->imu_state.rpy[2];
+[2.073s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.074s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.074s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.075s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.075s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.075s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.075s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:46:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+[2.075s]    46 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);
+[2.075s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[2.075s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/logging.hpp:23[m[K,
+[2.075s]                  from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.075s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.076s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.076s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.076s] [01m[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+[2.077s]    80 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+[2.077s]       |                 [01;36m[K^~~~~~[m[K
+[2.077s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.077s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.078s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.078s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.078s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.078s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.078s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.078s]    46 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);
+[2.078s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.078s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.079s]    46 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);
+[2.079s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.079s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:46:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.079s]    46 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);
+[2.079s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[2.079s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.079s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:52:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGamepadControl[m[K’ was not declared in this scope
+[2.079s]    52 |  rclcpp::spin(std::make_shared<[01;31m[KGamepadControl[m[K>());
+[2.079s]       |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.079s] 
+[2.080s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:52:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >()[m[K’
+[2.080s]    52 | d::make_shared<GamepadControl>([01;31m[K)[m[K);
+[2.080s]       |                                [01;31m[K^[m[K
+[2.080s] 
+[2.080s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[2.080s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.080s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[2.080s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+[2.080s]   714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+[2.080s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.081s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.081s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:52:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.081s]    52 | d::make_shared<GamepadControl>([01;31m[K)[m[K);
+[2.081s]       |                                [01;31m[K^[m[K
+[2.081s] 
+[2.608s] make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1
+[2.608s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2
+[2.609s] make: *** [Makefile:141: all] Error 2
+[2.622s] Invoked command in '/ws/go2_ws/src/build/movement' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8

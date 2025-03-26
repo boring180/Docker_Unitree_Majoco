@@ -1,0 +1,5 @@
+CMake Error at cmake_install.cmake:81 (file):
+  file INSTALL cannot find "/ws/go2_ws/src/movement/launch": No such file or
+  directory.
+
+

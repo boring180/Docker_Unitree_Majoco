@@ -1,0 +1,2 @@
+Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /ws/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/ws/go2_ws/src/install/movement
+Invoked command in '/ws/go2_ws/src/build/movement' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /ws/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/ws/go2_ws/src/install/movement

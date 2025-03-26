@@ -1,0 +1,3 @@
+[ 44%] [32m[1mLinking CXX executable gamepad_controller[0m
+[ 77%] Built target keyboard_control
+[ 77%] Built target back_and_forth

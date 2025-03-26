@@ -1,0 +1,30 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found unitree_go: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found unitree_api: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+CMake Error at CMakeLists.txt:24 (find_package):
+  By not providing "Findinterfaces.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "interfaces", but CMake did not find one.
+
+  Could not find a package configuration file provided by "interfaces" with
+  any of the following names:
+
+    interfacesConfig.cmake
+    interfaces-config.cmake
+
+  Add the installation prefix of "interfaces" to CMAKE_PREFIX_PATH or set
+  "interfaces_DIR" to a directory containing one of the above files.  If
+  "interfaces" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/ws/go2_ws/src/build/movement/CMakeFiles/CMakeOutput.log".
+See also "/ws/go2_ws/src/build/movement/CMakeFiles/CMakeError.log".

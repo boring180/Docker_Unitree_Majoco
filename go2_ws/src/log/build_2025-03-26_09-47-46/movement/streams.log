@@ -1,0 +1,37 @@
+[0.023s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[0.093s] [35m[1mScanning dependencies of target gamepad_controller[0m
+[0.125s] [ 55%] Built target keyboard_control
+[0.127s] [ 66%] Built target back_and_forth
+[0.358s] [ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[1.518s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.518s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.518s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.520s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.520s]                  from [01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:7[m[K,
+[1.520s]                  from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[1.520s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:21:5:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kdo[m[K’
+[1.520s]    21 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Gamepad input: %f, %f, %f", input.vx, input.vy, input.vyaw);
+[1.520s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.523s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:21:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[1.523s]    21 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Gamepad input: %f, %f, %f", input.vx, input.vy, input.vyaw);
+[1.523s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.523s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[KsportClient_[m[K’ does not name a type; did you mean ‘[01m[KSportClient[m[K’?
+[1.523s]    22 |     [01;31m[KsportClient_[m[K.Move(reqMsg_, input.vx, input.vy, input.vyaw);
+[1.524s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[1.524s]       |     [32m[KSportClient[m[K
+[1.524s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[KreqPuber_[m[K’ does not name a type
+[1.524s]    23 |     [01;31m[KreqPuber_[m[K->publish(reqMsg_);
+[1.524s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.524s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[1.528s]    24 | [01;31m[K}[m[K
+[1.528s]       | [01;31m[K^[m[K
+[2.931s] make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1
+[2.932s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2
+[2.932s] make: *** [Makefile:141: all] Error 2
+[2.941s] Invoked command in '/ws/go2_ws/src/build/movement' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8

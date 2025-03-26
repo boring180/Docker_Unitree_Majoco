@@ -1,0 +1,23 @@
+[35m[1mScanning dependencies of target gamepad_controller[0m
+[ 66%] Built target keyboard_control
+[ 66%] Built target back_and_forth
+[ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::timerCallback()[m[K’:
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:34:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KGamepadControl::GamepadInput[m[K’ and ‘[01m[Kvoid[m[K’)
+   24 |     input = getGamepadInput(input[01;31m[K)[m[K;
+      |                                  [01;31m[K^[m[K
+In file included from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9[m[K:
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr GamepadControl::GamepadInput& GamepadControl::GamepadInput::operator=(const GamepadControl::GamepadInput&)[m[K’
+   21 |     struct [01;36m[KGamepadInput[m[K
+      |            [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvoid[m[K’ to ‘[01m[Kconst GamepadControl::GamepadInput&[m[K’
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr GamepadControl::GamepadInput& GamepadControl::GamepadInput::operator=(GamepadControl::GamepadInput&&)[m[K’
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvoid[m[K’ to ‘[01m[KGamepadControl::GamepadInput&&[m[K’
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’:
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   34 | :getGamepadInput([01;35m[KGamepadInput &input[m[K)
+      |                  [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
+
+make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

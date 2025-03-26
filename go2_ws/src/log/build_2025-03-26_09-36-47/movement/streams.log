@@ -1,0 +1,35 @@
+[0.026s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[0.083s] [35m[1mScanning dependencies of target gamepad_controller[0m
+[0.109s] [ 55%] Built target back_and_forth
+[0.110s] [ 66%] Built target keyboard_control
+[0.358s] [ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[1.425s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’:
+[1.426s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.426s]    34 | :getGamepadInput([01;35m[KGamepadInput &input[m[K)
+[1.426s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
+[1.426s] 
+[4.879s] [ 88%] [32m[1mLinking CXX executable gamepad_controller[0m
+[5.158s] [100%] Built target gamepad_controller
+[5.175s] Invoked command in '/ws/go2_ws/src/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[5.205s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /ws/go2_ws/src/build/movement
+[5.210s] -- Install configuration: ""
+[5.212s] -- Up-to-date: /ws/go2_ws/src/install/movement/lib/movement/back_and_forth
+[5.213s] -- Up-to-date: /ws/go2_ws/src/install/movement/lib/movement/keyboard_control
+[5.213s] -- Installing: /ws/go2_ws/src/install/movement/lib/movement/gamepad_controller
+[5.252s] -- Set runtime path of "/ws/go2_ws/src/install/movement/lib/movement/gamepad_controller" to ""
+[5.253s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/package_run_dependencies/movement
+[5.253s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/parent_prefix_path/movement
+[5.253s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/environment/ament_prefix_path.sh
+[5.255s] -- Installing: /ws/go2_ws/src/install/movement/share/movement/environment/ament_prefix_path.dsv
+[5.257s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/environment/path.sh
+[5.258s] -- Installing: /ws/go2_ws/src/install/movement/share/movement/environment/path.dsv
+[5.259s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.bash
+[5.260s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.sh
+[5.260s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.zsh
+[5.261s] -- Installing: /ws/go2_ws/src/install/movement/share/movement/local_setup.dsv
+[5.263s] -- Installing: /ws/go2_ws/src/install/movement/share/movement/package.dsv
+[5.265s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/packages/movement
+[5.266s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/cmake/movementConfig.cmake
+[5.266s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/cmake/movementConfig-version.cmake
+[5.266s] -- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/package.xml
+[5.272s] Invoked command in '/ws/go2_ws/src/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /ws/go2_ws/src/build/movement

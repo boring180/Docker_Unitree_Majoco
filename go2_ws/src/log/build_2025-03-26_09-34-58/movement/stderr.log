@@ -1,0 +1,62 @@
+In file included from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9[m[K:
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:17:21:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KKeyboardControl[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+   17 |     KeyboardControl([01;31m[K)[m[K;
+      |                     [01;31m[K^[m[K
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:11:32:[m[K [01;31m[Kerror: [m[Kdefinition of implicitly-declared ‘[01m[KGamepadControl::GamepadControl()[m[K’
+   11 | GamepadControl::GamepadControl([01;31m[K)[m[K : Node("gamepad_controller"){
+      |                                [01;31m[K^[m[K
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::timerCallback()[m[K’:
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:29:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGamepadControl::getGamepadInput()[m[K’
+   24 |     input = getGamepadInput([01;31m[K)[m[K;
+      |                             [01;31m[K^[m[K
+In file included from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9[m[K:
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:30:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’
+   30 |     void [01;36m[KgetGamepadInput[m[K(GamepadInput &input);
+      |          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:30:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’:
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   34 | :getGamepadInput([01;35m[KGamepadInput &input[m[K)
+      |                  [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
+
+In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/9/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/9/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/9/memory:63[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+/usr/include/c++/9/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = GamepadControl; _Args = {}; _Tp = GamepadControl][m[K’:
+[01m[K/usr/include/c++/9/bits/alloc_traits.h:483:4:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = GamepadControl; _Args = {}; _Tp = GamepadControl; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<GamepadControl>][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = GamepadControl; _Alloc = std::allocator<GamepadControl>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = GamepadControl; _Alloc = std::allocator<GamepadControl>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<GamepadControl>; _Args = {}; _Tp = GamepadControl; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:359:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<GamepadControl>; _Args = {}; _Tp = GamepadControl][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:701:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = GamepadControl; _Alloc = std::allocator<GamepadControl>; _Args = {}][m[K’
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:717:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = GamepadControl; _Args = {}][m[K’
+[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:52:51:[m[K   required from here
+[01m[K/usr/include/c++/9/ext/new_allocator.h:146:4:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KGamepadControl::GamepadControl()[m[K’
+  146 |  { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9[m[K:
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:14:7:[m[K [01;36m[Knote: [m[K‘[01m[KGamepadControl::GamepadControl()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   14 | class [01;36m[KGamepadControl[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:14:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1193 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+   98 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   86 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,58 @@
+[0.036s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /ws/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/ws/go2_ws/src/install/movement
+[0.521s] -- The C compiler identification is GNU 9.4.0
+[0.749s] -- The CXX compiler identification is GNU 9.4.0
+[0.755s] -- Check for working C compiler: /usr/bin/cc
+[0.880s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.881s] -- Detecting C compiler ABI info
+[1.052s] -- Detecting C compiler ABI info - done
+[1.059s] -- Detecting C compile features
+[1.060s] -- Detecting C compile features - done
+[1.063s] -- Check for working CXX compiler: /usr/bin/c++
+[1.137s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.138s] -- Detecting CXX compiler ABI info
+[1.258s] -- Detecting CXX compiler ABI info - done
+[1.267s] -- Detecting CXX compile features
+[1.267s] -- Detecting CXX compile features - done
+[1.273s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.290s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.290s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.414s] -- Found unitree_go: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_go/share/unitree_go/cmake)
+[1.450s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.456s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.511s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.525s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.653s] -- Found unitree_api: 0.0.0 (/root/unitree_ros2/cyclonedds_ws/install/unitree_api/share/unitree_api/cmake)
+[1.690s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.732s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.734s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.737s] -- Looking for pthread.h
+[1.835s] -- Looking for pthread.h - found
+[1.836s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.958s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.958s] -- Looking for pthread_create in pthreads
+[2.088s] -- Looking for pthread_create in pthreads - not found
+[2.088s] -- Looking for pthread_create in pthread
+[2.182s] -- Looking for pthread_create in pthread - found
+[2.182s] -- Found Threads: TRUE  
+[2.280s] CMake Error at CMakeLists.txt:24 (find_package):
+[2.280s]   By not providing "Findinterfaces.cmake" in CMAKE_MODULE_PATH this project
+[2.280s]   has asked CMake to find a package configuration file provided by
+[2.281s]   "interfaces", but CMake did not find one.
+[2.281s] 
+[2.281s]   Could not find a package configuration file provided by "interfaces" with
+[2.282s]   any of the following names:
+[2.282s] 
+[2.282s]     interfacesConfig.cmake
+[2.285s]     interfaces-config.cmake
+[2.286s] 
+[2.287s]   Add the installation prefix of "interfaces" to CMAKE_PREFIX_PATH or set
+[2.287s]   "interfaces_DIR" to a directory containing one of the above files.  If
+[2.288s]   "interfaces" provides a separate development package or SDK, be sure it has
+[2.288s]   been installed.
+[2.288s] 
+[2.290s] 
+[2.290s] -- Configuring incomplete, errors occurred!
+[2.291s] See also "/ws/go2_ws/src/build/movement/CMakeFiles/CMakeOutput.log".
+[2.291s] See also "/ws/go2_ws/src/build/movement/CMakeFiles/CMakeError.log".
+[2.292s] Invoked command in '/ws/go2_ws/src/build/movement' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /ws/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/ws/go2_ws/src/install/movement

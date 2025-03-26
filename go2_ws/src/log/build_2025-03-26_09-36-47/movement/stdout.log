@@ -1,0 +1,26 @@
+[35m[1mScanning dependencies of target gamepad_controller[0m
+[ 55%] Built target back_and_forth
+[ 66%] Built target keyboard_control
+[ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable gamepad_controller[0m
+[100%] Built target gamepad_controller
+-- Install configuration: ""
+-- Up-to-date: /ws/go2_ws/src/install/movement/lib/movement/back_and_forth
+-- Up-to-date: /ws/go2_ws/src/install/movement/lib/movement/keyboard_control
+-- Installing: /ws/go2_ws/src/install/movement/lib/movement/gamepad_controller
+-- Set runtime path of "/ws/go2_ws/src/install/movement/lib/movement/gamepad_controller" to ""
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/package_run_dependencies/movement
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/parent_prefix_path/movement
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/environment/ament_prefix_path.sh
+-- Installing: /ws/go2_ws/src/install/movement/share/movement/environment/ament_prefix_path.dsv
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/environment/path.sh
+-- Installing: /ws/go2_ws/src/install/movement/share/movement/environment/path.dsv
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.bash
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.sh
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/local_setup.zsh
+-- Installing: /ws/go2_ws/src/install/movement/share/movement/local_setup.dsv
+-- Installing: /ws/go2_ws/src/install/movement/share/movement/package.dsv
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/ament_index/resource_index/packages/movement
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/cmake/movementConfig.cmake
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/cmake/movementConfig-version.cmake
+-- Up-to-date: /ws/go2_ws/src/install/movement/share/movement/package.xml

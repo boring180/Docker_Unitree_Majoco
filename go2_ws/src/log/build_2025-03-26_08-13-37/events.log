@@ -1,0 +1,212 @@
+[0.000000] (-) TimerEvent: {}
+[0.001494] (movement) JobQueued: {'identifier': 'movement', 'dependencies': OrderedDict()}
+[0.001649] (movement) JobStarted: {'identifier': 'movement'}
+[0.012605] (movement) JobProgress: {'identifier': 'movement', 'progress': 'cmake'}
+[0.013881] (movement) JobProgress: {'identifier': 'movement', 'progress': 'build'}
+[0.015600] (movement) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/go2_ws/src/build/movement', '--', '-j8', '-l8'], 'cwd': '/ws/go2_ws/src/build/movement', 'env': OrderedDict([('CXXFLAGS', '-march=armv8.3-a'), ('HOSTNAME', 'localhost'), ('GIT_ASKPASS', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/root/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/root/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/helpers/browser.sh'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp3s0" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-0b8dfde0-6a75-42ac-a36d-3453a91499ab.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f77b5146-9eb0-4432-b82f-80429b5c6722.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('CFLAGS', '-march=armv8.3-a'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f77b5146-9eb0-4432-b82f-80429b5c6722.sock"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f9253ddb8b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f77b5146-9eb0-4432-b82f-80429b5c6722.sock'), ('AMENT_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg:/root/unitree_ros2/cyclonedds_ws/install/unitree_go:/root/unitree_ros2/cyclonedds_ws/install/unitree_api:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ws/go2_ws/src/build/movement'), ('VNC_RESOLUTION', '1080x720'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/root/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/root/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg:/root/unitree_ros2/cyclonedds_ws/install/unitree_go:/root/unitree_ros2/cyclonedds_ws/install/unitree_api:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.097584] (movement) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o\x1b[0m\n'}
+[0.098782] (-) TimerEvent: {}
+[0.102349] (movement) StdoutLine: {'line': b'[ 55%] Built target keyboard_control\n'}
+[0.104274] (movement) StdoutLine: {'line': b'[ 77%] Built target back_and_forth\n'}
+[0.199802] (-) TimerEvent: {}
+[0.300795] (-) TimerEvent: {}
+[0.401811] (-) TimerEvent: {}
+[0.508534] (-) TimerEvent: {}
+[0.611254] (-) TimerEvent: {}
+[0.714057] (-) TimerEvent: {}
+[0.820925] (-) TimerEvent: {}
+[0.922839] (-) TimerEvent: {}
+[1.023496] (-) TimerEvent: {}
+[1.124968] (-) TimerEvent: {}
+[1.234799] (-) TimerEvent: {}
+[1.338872] (-) TimerEvent: {}
+[1.439845] (-) TimerEvent: {}
+[1.540908] (-) TimerEvent: {}
+[1.641895] (-) TimerEvent: {}
+[1.742964] (-) TimerEvent: {}
+[1.846273] (-) TimerEvent: {}
+[1.871590] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9\x1b[m\x1b[K:\n'}
+[1.875277] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/include/gamepad_controller.h:22:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadInput\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.875429] (movement) StderrLine: {'line': b'   22 |     void getGamepadInput(\x1b[01;31m\x1b[KGamepadInput\x1b[m\x1b[K &input);\n'}
+[1.875543] (movement) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.933711] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:11:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kconst float maxSpeed\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.934927] (movement) StderrLine: {'line': b'   11 | static const float \x1b[01;31m\x1b[KmaxSpeed\x1b[m\x1b[K = 0.3;\n'}
+[1.935049] (movement) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.935145] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9\x1b[m\x1b[K:\n'}
+[1.935239] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/include/gamepad_controller.h:12:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst float maxSpeed\x1b[m\x1b[K\xe2\x80\x99 previously defined here\n'}
+[1.935334] (movement) StderrLine: {'line': b'   12 | static const float \x1b[01;36m\x1b[KmaxSpeed\x1b[m\x1b[K = 0.3;\n'}
+[1.935451] (movement) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.939306] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:13:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadControl\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.939983] (movement) StderrLine: {'line': b'   13 | \x1b[01;31m\x1b[KGamepadControl\x1b[m\x1b[K::GamepadControl() : Node("gamepad_controller"){\n'}
+[1.941793] (movement) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.943284] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:22:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.944025] (movement) StderrLine: {'line': b'   22 | void \x1b[01;31m\x1b[KGamepadControl\x1b[m\x1b[K::timerCallback()\n'}
+[1.944377] (movement) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.944490] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid timerCallback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.944599] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadInput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.944952] (movement) StderrLine: {'line': b'   24 |     \x1b[01;31m\x1b[KGamepadInput\x1b[m\x1b[K input;\n'}
+[1.945047] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.945364] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:26:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.945470] (movement) StderrLine: {'line': b'   26 |     \x1b[01;31m\x1b[Kinput\x1b[m\x1b[K = getGamepadInput();\n'}
+[1.945558] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.945648] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:26:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgetGamepadInput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.945749] (movement) StderrLine: {'line': b'   26 |     input = \x1b[01;31m\x1b[KgetGamepadInput\x1b[m\x1b[K();\n'}
+[1.947971] (-) TimerEvent: {}
+[1.948078] (movement) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.948210] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.948306] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.948670] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.948775] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.949111] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.949201] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.949524] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.949830] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.949939] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.950299] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.950393] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.950543] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.950637] (movement) StderrLine: {'line': b'   31 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.950726] (movement) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.950829] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.950924] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.951304] (movement) StderrLine: {'line': b'   31 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.951437] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.951788] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.952112] (movement) StderrLine: {'line': b'   31 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.952204] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.952292] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.952381] (movement) StderrLine: {'line': b'   31 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.952465] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.952550] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.952634] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.952720] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.952806] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.952888] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.952975] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.953059] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.953147] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.953242] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.953332] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.953440] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.953529] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.953612] (movement) StderrLine: {'line': b'   31 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.953694] (movement) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.955311] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:31:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[1.956082] (movement) StderrLine: {'line': b'   31 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);\n'}
+[1.956932] (movement) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.958781] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsportClient_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KSportClient\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.959814] (movement) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[KsportClient_\x1b[m\x1b[K.Move(reqMsg_, vx, vy, vyaw);\n'}
+[1.959915] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.960012] (movement) StderrLine: {'line': b'      |     \x1b[32m\x1b[KSportClient\x1b[m\x1b[K\n'}
+[1.960100] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:32:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KreqMsg_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.960188] (movement) StderrLine: {'line': b'   32 |     sportClient_.Move(\x1b[01;31m\x1b[KreqMsg_\x1b[m\x1b[K, vx, vy, vyaw);\n'}
+[1.960280] (movement) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.960375] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:33:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KreqPuber_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.960461] (movement) StderrLine: {'line': b'   33 |     \x1b[01;31m\x1b[KreqPuber_\x1b[m\x1b[K->publish(reqMsg_);\n'}
+[1.960568] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.960652] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:\x1b[m\x1b[K At global scope:\n'}
+[1.960744] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:36:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.963990] (movement) StderrLine: {'line': b'   36 | void \x1b[01;31m\x1b[KGamepadControl\x1b[m\x1b[K::getGamepadInput(GamepadInput &input)\n'}
+[1.966011] (movement) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.966884] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:36:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KgetGamepadInput\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.966995] (movement) StderrLine: {'line': b'   36 | void GamepadControl::getGamepadInput(\x1b[01;31m\x1b[KGamepadInput\x1b[m\x1b[K &input)\n'}
+[1.967082] (movement) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.967173] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:36:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadInput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.967281] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:36:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinput\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.967391] (movement) StderrLine: {'line': b'   36 | void GamepadControl::getGamepadInput(GamepadInput &\x1b[01;31m\x1b[Kinput\x1b[m\x1b[K)\n'}
+[1.967493] (movement) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.967820] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:42:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadControl\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.967913] (movement) StderrLine: {'line': b'   42 | void \x1b[01;31m\x1b[KGamepadControl\x1b[m\x1b[K::stateCallback(unitree_go::msg::SportModeState::SharedPtr data)\n'}
+[1.969840] (movement) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.969929] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid stateCallback(unitree_go::msg::SportModeState_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.970016] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:45:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcurrentX_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.970348] (movement) StderrLine: {'line': b'   45 |     \x1b[01;31m\x1b[KcurrentX_\x1b[m\x1b[K = data->position[0];\n'}
+[1.970472] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.970556] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:46:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcurrentY_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.970641] (movement) StderrLine: {'line': b'   46 |     \x1b[01;31m\x1b[KcurrentY_\x1b[m\x1b[K = data->position[1];\n'}
+[1.970724] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.970811] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:47:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcurrentYaw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.970894] (movement) StderrLine: {'line': b'   47 |     \x1b[01;31m\x1b[KcurrentYaw_\x1b[m\x1b[K = data->imu_state.rpy[2];\n'}
+[1.970976] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.971059] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.971142] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.971225] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.971308] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.971615] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.971701] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.971785] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.971875] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.972197] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.972285] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.972372] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.972465] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:48:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.972978] (movement) StderrLine: {'line': b'   48 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);\n'}
+[1.973286] (movement) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.973392] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[1.973481] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.973565] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.973650] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.973990] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.974091] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.974175] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.974258] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.974615] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.974947] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.975036] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.975121] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.975203] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/logger.hpp:80:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[1.975313] (movement) StderrLine: {'line': b'   80 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[1.976965] (movement) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.977050] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.977159] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.977242] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.977326] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.977452] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.977539] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.977625] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.977712] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.977801] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.977891] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.977974] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.978056] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:48:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.978139] (movement) StderrLine: {'line': b'   48 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);\n'}
+[1.978221] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.978302] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:48:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.978387] (movement) StderrLine: {'line': b'   48 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);\n'}
+[1.978467] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.978549] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:48:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.978641] (movement) StderrLine: {'line': b'   48 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Current position: %f, %f, %f", currentX_, currentY_, currentYaw_);\n'}
+[1.978728] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.978815] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.978903] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:54:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGamepadControl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.978987] (movement) StderrLine: {'line': b'   54 |     rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KGamepadControl\x1b[m\x1b[K>());\n'}
+[1.979068] (movement) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.979153] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:54:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.979505] (movement) StderrLine: {'line': b'   54 |     rclcpp::spin(std::make_shared<GamepadControl>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[1.979594] (movement) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.979934] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/memory:81\x1b[m\x1b[K,\n'}
+[1.980034] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.980145] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.980228] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.980310] (movement) StderrLine: {'line': b'  714 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[1.980392] (movement) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.980740] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:714:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.981999] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:54:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.982084] (movement) StderrLine: {'line': b'   54 |     rclcpp::spin(std::make_shared<GamepadControl>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[1.982166] (movement) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.049077] (-) TimerEvent: {}
+[2.149932] (-) TimerEvent: {}
+[2.250954] (-) TimerEvent: {}
+[2.351824] (-) TimerEvent: {}
+[2.452866] (-) TimerEvent: {}
+[2.557037] (-) TimerEvent: {}
+[2.657791] (-) TimerEvent: {}
+[2.759441] (-) TimerEvent: {}
+[2.859808] (-) TimerEvent: {}
+[2.921575] (movement) StderrLine: {'line': b'make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1\n'}
+[2.922222] (movement) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2\n'}
+[2.922679] (movement) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.939151] (movement) CommandEnded: {'returncode': 2}
+[2.962199] (-) TimerEvent: {}
+[2.998763] (movement) JobEnded: {'identifier': 'movement', 'rc': 2}
+[3.010067] (-) EventReactorShutdown: {}

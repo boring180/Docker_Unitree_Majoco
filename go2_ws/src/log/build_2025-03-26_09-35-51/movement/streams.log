@@ -1,0 +1,25 @@
+[0.033s] Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
+[0.097s] [35m[1mScanning dependencies of target gamepad_controller[0m
+[0.138s] [ 66%] Built target keyboard_control
+[0.138s] [ 66%] Built target back_and_forth
+[0.393s] [ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[1.291s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::timerCallback()[m[K’:
+[1.292s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:34:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KGamepadControl::GamepadInput[m[K’ and ‘[01m[Kvoid[m[K’)
+[1.292s]    24 |     input = getGamepadInput(input[01;31m[K)[m[K;
+[1.292s]       |                                  [01;31m[K^[m[K
+[1.292s] In file included from [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:9[m[K:
+[1.293s] [01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr GamepadControl::GamepadInput& GamepadControl::GamepadInput::operator=(const GamepadControl::GamepadInput&)[m[K’
+[1.296s]    21 |     struct [01;36m[KGamepadInput[m[K
+[1.296s]       |            [01;36m[K^~~~~~~~~~~~[m[K
+[1.296s] [01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvoid[m[K’ to ‘[01m[Kconst GamepadControl::GamepadInput&[m[K’
+[1.296s] [01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr GamepadControl::GamepadInput& GamepadControl::GamepadInput::operator=(GamepadControl::GamepadInput&&)[m[K’
+[1.296s] [01m[K/ws/go2_ws/src/movement/include/gamepad_controller.h:21:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kvoid[m[K’ to ‘[01m[KGamepadControl::GamepadInput&&[m[K’
+[1.378s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’:
+[1.378s] [01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.379s]    34 | :getGamepadInput([01;35m[KGamepadInput &input[m[K)
+[1.379s]       |                  [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
+[1.379s] 
+[3.026s] make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1
+[3.026s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2
+[3.026s] make: *** [Makefile:141: all] Error 2
+[3.035s] Invoked command in '/ws/go2_ws/src/build/movement' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8

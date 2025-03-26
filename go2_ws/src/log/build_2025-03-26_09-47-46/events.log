@@ -1,0 +1,73 @@
+[0.000000] (-) TimerEvent: {}
+[0.001978] (movement) JobQueued: {'identifier': 'movement', 'dependencies': OrderedDict()}
+[0.002150] (movement) JobStarted: {'identifier': 'movement'}
+[0.014411] (movement) JobProgress: {'identifier': 'movement', 'progress': 'cmake'}
+[0.015703] (movement) JobProgress: {'identifier': 'movement', 'progress': 'build'}
+[0.017378] (movement) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws/go2_ws/src/build/movement', '--', '-j8', '-l8'], 'cwd': '/ws/go2_ws/src/build/movement', 'env': OrderedDict([('CXXFLAGS', '-march=armv8.3-a'), ('HOSTNAME', 'localhost'), ('GIT_ASKPASS', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/root/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/root/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/helpers/browser.sh'), ('HOME', '/root'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp3s0" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-0b8dfde0-6a75-42ac-a36d-3453a91499ab.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-f77b5146-9eb0-4432-b82f-80429b5c6722.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/aarch64-linux-gnu/pkgconfig:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/root/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/root/.vscode-server/bin/ddc367ed5c8936efe395cffeec279b04ffd7db78/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('CFLAGS', '-march=armv8.3-a'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-f77b5146-9eb0-4432-b82f-80429b5c6722.sock"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f9253ddb8b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-f77b5146-9eb0-4432-b82f-80429b5c6722.sock'), ('AMENT_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg:/root/unitree_ros2/cyclonedds_ws/install/unitree_go:/root/unitree_ros2/cyclonedds_ws/install/unitree_api:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/ws/go2_ws/src/build/movement'), ('VNC_RESOLUTION', '1080x720'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/root/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/root/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/unitree_ros2/cyclonedds_ws/install/unitree_hg:/root/unitree_ros2/cyclonedds_ws/install/unitree_go:/root/unitree_ros2/cyclonedds_ws/install/unitree_api:/root/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/root/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.095221] (movement) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gamepad_controller\x1b[0m\n'}
+[0.100009] (-) TimerEvent: {}
+[0.124962] (movement) StdoutLine: {'line': b'[ 55%] Built target keyboard_control\n'}
+[0.127965] (movement) StdoutLine: {'line': b'[ 66%] Built target back_and_forth\n'}
+[0.200792] (-) TimerEvent: {}
+[0.301801] (-) TimerEvent: {}
+[0.359944] (movement) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o\x1b[0m\n'}
+[0.402787] (-) TimerEvent: {}
+[0.503772] (-) TimerEvent: {}
+[0.604795] (-) TimerEvent: {}
+[0.707803] (-) TimerEvent: {}
+[0.809916] (-) TimerEvent: {}
+[0.910841] (-) TimerEvent: {}
+[1.011804] (-) TimerEvent: {}
+[1.113738] (-) TimerEvent: {}
+[1.218630] (-) TimerEvent: {}
+[1.319865] (-) TimerEvent: {}
+[1.422830] (-) TimerEvent: {}
+[1.516088] (movement) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.520276] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.520458] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.520633] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.520802] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.520966] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.521127] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.521293] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.521469] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.521633] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.521789] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/include/gamepad_controller.h:7\x1b[m\x1b[K,\n'}
+[1.521974] (movement) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:5\x1b[m\x1b[K:\n'}
+[1.522143] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:21:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.522341] (movement) StderrLine: {'line': b'   21 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Gamepad input: %f, %f, %f", input.vx, input.vy, input.vyaw);\n'}
+[1.522505] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.522673] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:21:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.524839] (-) TimerEvent: {}
+[1.524974] (movement) StderrLine: {'line': b'   21 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Gamepad input: %f, %f, %f", input.vx, input.vy, input.vyaw);\n'}
+[1.525162] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.525335] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:22:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsportClient_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KSportClient\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.525491] (movement) StderrLine: {'line': b'   22 |     \x1b[01;31m\x1b[KsportClient_\x1b[m\x1b[K.Move(reqMsg_, input.vx, input.vy, input.vyaw);\n'}
+[1.525660] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.525829] (movement) StderrLine: {'line': b'      |     \x1b[32m\x1b[KSportClient\x1b[m\x1b[K\n'}
+[1.525984] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:23:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KreqPuber_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.526141] (movement) StderrLine: {'line': b'   23 |     \x1b[01;31m\x1b[KreqPuber_\x1b[m\x1b[K->publish(reqMsg_);\n'}
+[1.526306] (movement) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.526467] (movement) StderrLine: {'line': b'\x1b[01m\x1b[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:24:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.529750] (movement) StderrLine: {'line': b'   24 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[1.529921] (movement) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.625792] (-) TimerEvent: {}
+[1.726807] (-) TimerEvent: {}
+[1.827840] (-) TimerEvent: {}
+[1.928817] (-) TimerEvent: {}
+[2.033830] (-) TimerEvent: {}
+[2.134949] (-) TimerEvent: {}
+[2.235831] (-) TimerEvent: {}
+[2.336827] (-) TimerEvent: {}
+[2.437984] (-) TimerEvent: {}
+[2.538814] (-) TimerEvent: {}
+[2.639863] (-) TimerEvent: {}
+[2.740802] (-) TimerEvent: {}
+[2.841813] (-) TimerEvent: {}
+[2.932925] (movement) StderrLine: {'line': b'make[2]: *** [CMakeFiles/gamepad_controller.dir/build.make:63: CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o] Error 1\n'}
+[2.933812] (movement) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/gamepad_controller.dir/all] Error 2\n'}
+[2.934087] (movement) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.942930] (movement) CommandEnded: {'returncode': 2}
+[2.944371] (-) TimerEvent: {}
+[3.002902] (movement) JobEnded: {'identifier': 'movement', 'rc': 2}
+[3.014655] (-) EventReactorShutdown: {}
