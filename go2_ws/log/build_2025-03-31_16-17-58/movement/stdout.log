@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target gamepad_controller[0m
-[ 33%] Built target back_and_forth
-[ 66%] Built target keyboard_control
-[ 77%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m

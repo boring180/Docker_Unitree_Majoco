@@ -1,2 +1,0 @@
-Invoking command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement -- -j4 -l4
-Invoked command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement -- -j4 -l4

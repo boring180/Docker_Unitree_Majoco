@@ -3,22 +3,11 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
+      "type": "lldb",
       "request": "launch",
       "args": [],
-      "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/borong/Docker_Unitree_Majoco/go2_ws/src/movement/src",
-      "program": "/home/borong/Docker_Unitree_Majoco/go2_ws/src/movement/src/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "cwd": "/Users/xuborong/Documents/GitHub/ROS2_Docker/go2_ws/src/movement/src",
+      "program": "/Users/xuborong/Documents/GitHub/ROS2_Docker/go2_ws/src/movement/src/build/Debug/outDebug"
     }
   ]
 }
