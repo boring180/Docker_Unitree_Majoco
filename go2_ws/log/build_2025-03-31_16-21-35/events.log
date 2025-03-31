@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000371] (movement) JobQueued: {'identifier': 'movement', 'dependencies': OrderedDict()}
+[0.001027] (movement) JobStarted: {'identifier': 'movement'}
+[0.021421] (movement) JobProgress: {'identifier': 'movement', 'progress': 'cmake'}
+[0.022781] (movement) JobProgress: {'identifier': 'movement', 'progress': 'build'}
+[0.024964] (movement) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement', '--', '-j4', '-l4'], 'cwd': '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'borong'), ('SSH_AGENT_PID', '1004'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/borong'), ('CHROME_DESKTOP', 'code.desktop'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp8s0" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/borong/Docker_Unitree_Majoco'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '892'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2270'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'borong'), ('JOURNAL_STREAM', '8:35087'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'borong'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/borong-HP-ProBook-430-G2:@/tmp/.ICE-unix/1041,unix/borong-HP-ProBook-430-G2:/tmp/.ICE-unix/1041'), ('INVOCATION_ID', '18ec56e31e064fce927e1b91df743765'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[0.099640] (-) TimerEvent: {}
+[0.147851] (movement) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gamepad_controller\x1b[0m\n'}
+[0.199770] (-) TimerEvent: {}
+[0.227877] (movement) StdoutLine: {'line': b'[ 33%] Built target keyboard_control\n'}
+[0.239961] (movement) StdoutLine: {'line': b'[ 66%] Built target back_and_forth\n'}
+[0.272236] (movement) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o\x1b[0m\n'}
+[0.299903] (-) TimerEvent: {}
+[0.400381] (-) TimerEvent: {}
+[0.500852] (-) TimerEvent: {}
+[0.601359] (-) TimerEvent: {}
+[0.701847] (-) TimerEvent: {}
+[0.802405] (-) TimerEvent: {}
+[0.902919] (-) TimerEvent: {}
+[1.003423] (-) TimerEvent: {}
+[1.103862] (-) TimerEvent: {}
+[1.204325] (-) TimerEvent: {}
+[1.304821] (-) TimerEvent: {}
+[1.405335] (-) TimerEvent: {}
+[1.505891] (-) TimerEvent: {}
+[1.606487] (-) TimerEvent: {}
+[1.707023] (-) TimerEvent: {}
+[1.807537] (-) TimerEvent: {}
+[1.908049] (-) TimerEvent: {}
+[2.008592] (-) TimerEvent: {}
+[2.109132] (-) TimerEvent: {}
+[2.209656] (-) TimerEvent: {}
+[2.310185] (-) TimerEvent: {}
+[2.410713] (-) TimerEvent: {}
+[2.511246] (-) TimerEvent: {}
+[2.611818] (-) TimerEvent: {}
+[2.713095] (-) TimerEvent: {}
+[2.813625] (-) TimerEvent: {}
+[2.914107] (-) TimerEvent: {}
+[3.014555] (-) TimerEvent: {}
+[3.115019] (-) TimerEvent: {}
+[3.215512] (-) TimerEvent: {}
+[3.316073] (-) TimerEvent: {}
+[3.416623] (-) TimerEvent: {}
+[3.517249] (-) TimerEvent: {}
+[3.617753] (-) TimerEvent: {}
+[3.718262] (-) TimerEvent: {}
+[3.818788] (-) TimerEvent: {}
+[3.919339] (-) TimerEvent: {}
+[4.019915] (-) TimerEvent: {}
+[4.120511] (-) TimerEvent: {}
+[4.221081] (-) TimerEvent: {}
+[4.321585] (-) TimerEvent: {}
+[4.422074] (-) TimerEvent: {}
+[4.522582] (-) TimerEvent: {}
+[4.623122] (-) TimerEvent: {}
+[4.723685] (-) TimerEvent: {}
+[4.824205] (-) TimerEvent: {}
+[4.924751] (-) TimerEvent: {}
+[5.025289] (-) TimerEvent: {}
+[5.125794] (-) TimerEvent: {}
+[5.226257] (-) TimerEvent: {}
+[5.326705] (-) TimerEvent: {}
+[5.427175] (-) TimerEvent: {}
+[5.527726] (-) TimerEvent: {}
+[5.628188] (-) TimerEvent: {}
+[5.728614] (-) TimerEvent: {}
+[5.829130] (-) TimerEvent: {}
+[5.930018] (-) TimerEvent: {}
+[6.030695] (-) TimerEvent: {}
+[6.131153] (-) TimerEvent: {}
+[6.231609] (-) TimerEvent: {}
+[6.332080] (-) TimerEvent: {}
+[6.432490] (-) TimerEvent: {}
+[6.532931] (-) TimerEvent: {}
+[6.633385] (-) TimerEvent: {}
+[6.733817] (-) TimerEvent: {}
+[6.834295] (-) TimerEvent: {}
+[6.934826] (-) TimerEvent: {}
+[7.035310] (-) TimerEvent: {}
+[7.135788] (-) TimerEvent: {}
+[7.236272] (-) TimerEvent: {}
+[7.336719] (-) TimerEvent: {}
+[7.437187] (-) TimerEvent: {}
+[7.537667] (-) TimerEvent: {}
+[7.638135] (-) TimerEvent: {}
+[7.738586] (-) TimerEvent: {}
+[7.838981] (-) TimerEvent: {}
+[7.939415] (-) TimerEvent: {}
+[8.039839] (-) TimerEvent: {}
+[8.140263] (-) TimerEvent: {}
+[8.240690] (-) TimerEvent: {}
+[8.341122] (-) TimerEvent: {}
+[8.441581] (-) TimerEvent: {}
+[8.542037] (-) TimerEvent: {}
+[8.642467] (-) TimerEvent: {}
+[8.742941] (-) TimerEvent: {}
+[8.843424] (-) TimerEvent: {}
+[8.943918] (-) TimerEvent: {}
+[9.044403] (-) TimerEvent: {}
+[9.144888] (-) TimerEvent: {}
+[9.245405] (-) TimerEvent: {}
+[9.345913] (-) TimerEvent: {}
+[9.446423] (-) TimerEvent: {}
+[9.546929] (-) TimerEvent: {}
+[9.647472] (-) TimerEvent: {}
+[9.748108] (-) TimerEvent: {}
+[9.848945] (-) TimerEvent: {}
+[9.949490] (-) TimerEvent: {}
+[10.050119] (-) TimerEvent: {}
+[10.150816] (-) TimerEvent: {}
+[10.251273] (-) TimerEvent: {}
+[10.351718] (-) TimerEvent: {}
+[10.452262] (-) TimerEvent: {}
+[10.552799] (-) TimerEvent: {}
+[10.653307] (-) TimerEvent: {}
+[10.753830] (-) TimerEvent: {}
+[10.854285] (-) TimerEvent: {}
+[10.954721] (-) TimerEvent: {}
+[11.055170] (-) TimerEvent: {}
+[11.155630] (-) TimerEvent: {}
+[11.256062] (-) TimerEvent: {}
+[11.356472] (-) TimerEvent: {}
+[11.456952] (-) TimerEvent: {}
+[11.557440] (-) TimerEvent: {}
+[11.657910] (-) TimerEvent: {}
+[11.758371] (-) TimerEvent: {}
+[11.858755] (-) TimerEvent: {}
+[11.959134] (-) TimerEvent: {}
+[12.059560] (-) TimerEvent: {}
+[12.159969] (-) TimerEvent: {}
+[12.260360] (-) TimerEvent: {}
+[12.360747] (-) TimerEvent: {}
+[12.461133] (-) TimerEvent: {}
+[12.561518] (-) TimerEvent: {}
+[12.661905] (-) TimerEvent: {}
+[12.762283] (-) TimerEvent: {}
+[12.862696] (-) TimerEvent: {}
+[12.963114] (-) TimerEvent: {}
+[13.063532] (-) TimerEvent: {}
+[13.163978] (-) TimerEvent: {}
+[13.264447] (-) TimerEvent: {}
+[13.364945] (-) TimerEvent: {}
+[13.465520] (-) TimerEvent: {}
+[13.566803] (-) TimerEvent: {}
+[13.667353] (-) TimerEvent: {}
+[13.767876] (-) TimerEvent: {}
+[13.868444] (-) TimerEvent: {}
+[13.968886] (-) TimerEvent: {}
+[14.069327] (-) TimerEvent: {}
+[14.169789] (-) TimerEvent: {}
+[14.270314] (-) TimerEvent: {}
+[14.370848] (-) TimerEvent: {}
+[14.471355] (-) TimerEvent: {}
+[14.571864] (-) TimerEvent: {}
+[14.672366] (-) TimerEvent: {}
+[14.772853] (-) TimerEvent: {}
+[14.873339] (-) TimerEvent: {}
+[14.973771] (-) TimerEvent: {}
+[15.074230] (-) TimerEvent: {}
+[15.174675] (-) TimerEvent: {}
+[15.275168] (-) TimerEvent: {}
+[15.375630] (-) TimerEvent: {}
+[15.476111] (-) TimerEvent: {}
+[15.576527] (-) TimerEvent: {}
+[15.676971] (-) TimerEvent: {}
+[15.777454] (-) TimerEvent: {}
+[15.877930] (-) TimerEvent: {}
+[15.978401] (-) TimerEvent: {}
+[16.078848] (-) TimerEvent: {}
+[16.179302] (-) TimerEvent: {}
+[16.279750] (-) TimerEvent: {}
+[16.380176] (-) TimerEvent: {}
+[16.480611] (-) TimerEvent: {}
+[16.581120] (-) TimerEvent: {}
+[16.681595] (-) TimerEvent: {}
+[16.782155] (-) TimerEvent: {}
+[16.882837] (-) TimerEvent: {}
+[16.983398] (-) TimerEvent: {}
+[17.084125] (-) TimerEvent: {}
+[17.185004] (-) TimerEvent: {}
+[17.242801] (movement) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable gamepad_controller\x1b[0m\n'}
+[17.285163] (-) TimerEvent: {}
+[17.385764] (-) TimerEvent: {}
+[17.486419] (-) TimerEvent: {}
+[17.587055] (-) TimerEvent: {}
+[17.687727] (-) TimerEvent: {}
+[17.788444] (-) TimerEvent: {}
+[17.889077] (-) TimerEvent: {}
+[17.989622] (-) TimerEvent: {}
+[18.090262] (-) TimerEvent: {}
+[18.098970] (movement) StdoutLine: {'line': b'[100%] Built target gamepad_controller\n'}
+[18.128987] (movement) CommandEnded: {'returncode': 0}
+[18.130426] (movement) JobProgress: {'identifier': 'movement', 'progress': 'install'}
+[18.158612] (movement) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement'], 'cwd': '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'borong'), ('SSH_AGENT_PID', '1004'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp/lib:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/borong'), ('CHROME_DESKTOP', 'code.desktop'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><Interfaces>\n                            <NetworkInterface name="enp8s0" priority="default" multicast="default" />\n                        </Interfaces></General></Domain></CycloneDDS>'), ('OLDPWD', '/home/borong/Docker_Unitree_Majoco'), ('TERM_PROGRAM_VERSION', '1.98.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '892'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2270'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'borong'), ('JOURNAL_STREAM', '8:35087'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/x86_64-linux-gnu/pkgconfig:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'borong'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/borong-HP-ProBook-430-G2:@/tmp/.ICE-unix/1041,unix/borong-HP-ProBook-430-G2:/tmp/.ICE-unix/1041'), ('INVOCATION_ID', '18ec56e31e064fce927e1b91df743765'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg/lib/python3.8/site-packages:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go/lib/python3.8/site-packages:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_hg:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_go:/home/borong/unitree_ros2/cyclonedds_ws/install/unitree_api:/home/borong/unitree_ros2/cyclonedds_ws/install/rmw_cyclonedds_cpp:/home/borong/unitree_ros2/cyclonedds_ws/install/cyclonedds:/opt/ros/foxy')]), 'shell': False}
+[18.181705] (movement) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.182324] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/back_and_forth\n'}
+[18.183409] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/keyboard_control\n'}
+[18.184456] (movement) StdoutLine: {'line': b'-- Installing: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/gamepad_controller\n'}
+[18.190402] (-) TimerEvent: {}
+[18.193278] (movement) StdoutLine: {'line': b'-- Set runtime path of "/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/gamepad_controller" to ""\n'}
+[18.193914] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement//launch\n'}
+[18.194328] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement//launch/launch.py\n'}
+[18.194760] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/package_run_dependencies/movement\n'}
+[18.195061] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/parent_prefix_path/movement\n'}
+[18.195282] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/ament_prefix_path.sh\n'}
+[18.195419] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/ament_prefix_path.dsv\n'}
+[18.195546] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/path.sh\n'}
+[18.195772] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/path.dsv\n'}
+[18.196049] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.bash\n'}
+[18.196179] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.sh\n'}
+[18.196350] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.zsh\n'}
+[18.196475] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.dsv\n'}
+[18.196593] (movement) StdoutLine: {'line': b'-- Installing: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/package.dsv\n'}
+[18.196712] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/packages/movement\n'}
+[18.196829] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/cmake/movementConfig.cmake\n'}
+[18.196946] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/cmake/movementConfig-version.cmake\n'}
+[18.197059] (movement) StdoutLine: {'line': b'-- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/package.xml\n'}
+[18.205215] (movement) CommandEnded: {'returncode': 0}
+[18.247836] (movement) JobEnded: {'identifier': 'movement', 'rc': 0}
+[18.249418] (-) EventReactorShutdown: {}

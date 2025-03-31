@@ -1,5 +1,0 @@
-[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:[m[K In member function ‘[01m[Kvoid GamepadControl::getGamepadInput(GamepadControl::GamepadInput&)[m[K’:
-[01m[K/ws/go2_ws/src/movement/src/gamepad_controller.cpp:34:52:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kinput[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   34 | :getGamepadInput([01;35m[KGamepadInput &input[m[K)
-      |                  [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
-

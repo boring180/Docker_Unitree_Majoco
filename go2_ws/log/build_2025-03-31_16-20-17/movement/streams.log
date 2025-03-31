@@ -1,0 +1,32 @@
+[0.029s] Invoking command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement -- -j4 -l4
+[0.144s] [35m[1mScanning dependencies of target gamepad_controller[0m
+[0.211s] [ 33%] Built target keyboard_control
+[0.282s] [ 44%] [32mBuilding CXX object CMakeFiles/gamepad_controller.dir/src/gamepad_controller.cpp.o[0m
+[0.331s] [ 77%] Built target back_and_forth
+[17.571s] [ 88%] [32m[1mLinking CXX executable gamepad_controller[0m
+[18.460s] [100%] Built target gamepad_controller
+[18.491s] Invoked command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement -- -j4 -l4
+[18.515s] Invoking command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement
+[18.541s] -- Install configuration: ""
+[18.541s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/back_and_forth
+[18.542s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/keyboard_control
+[18.543s] -- Installing: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/gamepad_controller
+[18.551s] -- Set runtime path of "/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/lib/movement/gamepad_controller" to ""
+[18.552s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement//launch
+[18.552s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement//launch/launch.py
+[18.552s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/package_run_dependencies/movement
+[18.553s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/parent_prefix_path/movement
+[18.553s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/ament_prefix_path.sh
+[18.553s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/ament_prefix_path.dsv
+[18.554s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/path.sh
+[18.554s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/environment/path.dsv
+[18.554s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.bash
+[18.555s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.sh
+[18.555s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.zsh
+[18.555s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/local_setup.dsv
+[18.555s] -- Installing: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/package.dsv
+[18.555s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/ament_index/resource_index/packages/movement
+[18.556s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/cmake/movementConfig.cmake
+[18.556s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/cmake/movementConfig-version.cmake
+[18.556s] -- Up-to-date: /home/borong/Docker_Unitree_Majoco/go2_ws/install/movement/share/movement/package.xml
+[18.558s] Invoked command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/borong/Docker_Unitree_Majoco/go2_ws/build/movement

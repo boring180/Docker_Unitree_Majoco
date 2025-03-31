@@ -1,6 +1,7 @@
 #include <termios.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <math.h>
 
 #include "gamepad_controller.h"
 
@@ -21,14 +22,21 @@ void GamepadControl::timerCallback() {
     float vyaw = input.vyaw;
 
     RCLCPP_INFO(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
-    sportClient_.Move(reqMsg_, vx, vy, vyaw);
+    if (abs(vx) <= 1e-3 && abs(vy) <= 1e-3 && abs(vyaw) <= 1e-3) {
+        sportClient_.StopMove(reqMsg_);
+    } else {
+        sportClient_.Move(reqMsg_, vx, vy, vyaw);
+    }
+
     reqPuber_->publish(reqMsg_);
+
 } 
 
 void GamepadControl::joyCallback(sensor_msgs::msg::Joy::SharedPtr data) {
     input.vx = data->axes[1] * maxSpeed;
     input.vy = data->axes[0] * maxSpeed;
-    input.vyaw = data->axes[3] * maxSpeed;
+    input.vyaw = data->axes[2] * maxSpeed;
+    RCLCPP_INFO(get_logger(), "Gamepad input: %f, %f, %f", input.vx, input.vy, input.vyaw);
 }
 
 void GamepadControl::stateCallback(unitree_go::msg::SportModeState::SharedPtr data)

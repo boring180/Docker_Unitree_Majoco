@@ -10,7 +10,7 @@
 #include "common/ros2_sport_client.h"
 #include "sensor_msgs/msg/joy.hpp"
 
-static const float maxSpeed = 0.3;
+static const float maxSpeed = 0.8;
 
 class GamepadInput
 {

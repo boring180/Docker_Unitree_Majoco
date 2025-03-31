@@ -1,4 +1,0 @@
-Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
-Invoked command in '/ws/go2_ws/src/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /ws/go2_ws/src/build/movement -- -j8 -l8
-Invoking command in '/ws/go2_ws/src/build/movement': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /ws/go2_ws/src/build/movement
-Invoked command in '/ws/go2_ws/src/build/movement' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /ws/go2_ws/src/build/movement

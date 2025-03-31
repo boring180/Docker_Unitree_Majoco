@@ -1,0 +1,2 @@
+Invoking command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement': /usr/bin/cmake /home/borong/Docker_Unitree_Majoco/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement
+Invoked command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement' returned '1': /usr/bin/cmake /home/borong/Docker_Unitree_Majoco/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement

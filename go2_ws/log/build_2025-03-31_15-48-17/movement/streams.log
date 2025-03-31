@@ -1,0 +1,35 @@
+[0.024s] Invoking command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement': /usr/bin/cmake /home/borong/Docker_Unitree_Majoco/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement
+[0.146s] -- The C compiler identification is GNU 9.4.0
+[0.274s] -- The CXX compiler identification is GNU 9.4.0
+[0.286s] -- Check for working C compiler: /usr/bin/cc
+[0.437s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.437s] -- Detecting C compiler ABI info
+[0.575s] -- Detecting C compiler ABI info - done
+[0.604s] -- Detecting C compile features
+[0.604s] -- Detecting C compile features - done
+[0.610s] -- Check for working CXX compiler: /usr/bin/c++
+[0.775s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.778s] -- Detecting CXX compiler ABI info
+[0.952s] -- Detecting CXX compiler ABI info - done
+[0.981s] -- Detecting CXX compile features
+[0.982s] -- Detecting CXX compile features - done
+[1.003s] CMake Error at CMakeLists.txt:20 (find_package):
+[1.003s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[1.003s]   has asked CMake to find a package configuration file provided by
+[1.003s]   "ament_cmake", but CMake did not find one.
+[1.004s] 
+[1.004s]   Could not find a package configuration file provided by "ament_cmake" with
+[1.004s]   any of the following names:
+[1.004s] 
+[1.004s]     ament_cmakeConfig.cmake
+[1.005s]     ament_cmake-config.cmake
+[1.005s] 
+[1.005s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[1.005s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[1.005s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[1.006s]   has been installed.
+[1.006s] 
+[1.006s] 
+[1.006s] -- Configuring incomplete, errors occurred!
+[1.006s] See also "/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/CMakeOutput.log".
+[1.011s] Invoked command in '/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement' returned '1': /usr/bin/cmake /home/borong/Docker_Unitree_Majoco/go2_ws/src/movement -DCMAKE_INSTALL_PREFIX=/home/borong/Docker_Unitree_Majoco/go2_ws/install/movement

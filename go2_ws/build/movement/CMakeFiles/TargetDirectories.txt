@@ -1,0 +1,12 @@
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/install/local.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/install.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/list_install_components.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/rebuild_cache.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/edit_cache.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/test.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/gamepad_controller.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/install/strip.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/keyboard_control.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/movement_uninstall.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/back_and_forth.dir
+/home/borong/Docker_Unitree_Majoco/go2_ws/build/movement/CMakeFiles/uninstall.dir
