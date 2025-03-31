@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/xuborong/Documents/GitHub/ROS2_Docker/go2_ws/src/movement/src",
+      "program": "/Users/xuborong/Documents/GitHub/ROS2_Docker/go2_ws/src/movement/src/build/Debug/outDebug"
+    }
+  ]
+}
