@@ -8,7 +8,7 @@ Following the instructions below, you can setup the Docker container and start t
 - [Docker](https://docs.docker.com/get-docker/)
 
 ---
-## Attention
+## Attention for different processors
 
 For Intel processors, please comment out the following line in the Dockerfile:
 ```bash
@@ -23,6 +23,17 @@ But armv8.6-a is not supported by GCC 10. While armv8.3-a actually works for M2.
 ```bash
 ENV CFLAGS="-march=armv8.3-a"
 ENV CXXFLAGS="-march=armv8.3-a"
+```
+
+## Attention for Windows users
+
+For Windows users, please uncomment the following line in the Dockerfile:
+```bash
+# RUN chmod +x /start.sh && sed -i 's/\r$//' /start.sh
+```
+and comment the following line:
+```bash
+RUN chmod +x /start.sh
 ```
 ---
 ## Installation

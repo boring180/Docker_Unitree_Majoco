@@ -95,5 +95,6 @@ EXPOSE 5900 6080
 # Copy and set up start script
 COPY scripts/start.sh /
 RUN chmod +x /start.sh
+# RUN chmod +x /start.sh && sed -i 's/\r$//' /start.sh
 
 ENTRYPOINT ["/start.sh"]
