@@ -10,10 +10,15 @@ from sensor_msgs.msg import Image
 class AprilTag(Node):
     def __init__(self):
         super().__init__("april_tag")
+        self.declare_parameter("channel", 0)
         self.pub = self.create_publisher(Image, "april_tag", 10)
         self.client = VideoClient()
         timer_period = 0.1
         self.timer = self.create_timer(timer_period, self.timer_callback)
+        if len(self.get_parameter("channel").get_parameter_value().string_value) == 0:
+            ChannelFactoryInitialize(0)
+        else:
+            ChannelFactoryInitialize(0, self.get_parameter("channel").get_parameter_value().string_value)
 
     def timer_callback(self):
         code, data = self.client.GetImageSample()
@@ -27,10 +32,6 @@ class AprilTag(Node):
         self.pub.publish(image)
         
 def main(args=None):
-    if len(sys.argv)>1:
-        ChannelFactoryInitialize(0, sys.argv[1])
-    else:
-        ChannelFactoryInitialize(0)
     rclpy.init(args=args)
     april_tag = AprilTag()
     rclpy.spin(april_tag)
