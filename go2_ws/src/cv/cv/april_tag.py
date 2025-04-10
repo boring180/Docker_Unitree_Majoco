@@ -27,6 +27,10 @@ class AprilTag(Node):
         self.pub.publish(image)
         
 def main(args=None):
+    if len(sys.argv)>1:
+        ChannelFactoryInitialize(0, sys.argv[1])
+    else:
+        ChannelFactoryInitialize(0)
     rclpy.init(args=args)
     april_tag = AprilTag()
     rclpy.spin(april_tag)
