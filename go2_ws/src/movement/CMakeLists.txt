@@ -23,18 +23,10 @@ find_package(unitree_api REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
-add_executable(back_and_forth src/back_and_forth.cpp src/common/ros2_sport_client.cpp)
-ament_target_dependencies(back_and_forth ${DEPENDENCY_LIST})
-
-add_executable(keyboard_control src/keyboard_control.cpp src/common/ros2_sport_client.cpp)
-ament_target_dependencies(keyboard_control ${DEPENDENCY_LIST})
-
 add_executable(gamepad_controller src/gamepad_controller.cpp src/common/ros2_sport_client.cpp)
 ament_target_dependencies(gamepad_controller ${DEPENDENCY_LIST})
 
 install(TARGETS
-  back_and_forth
-  keyboard_control
   gamepad_controller
   DESTINATION lib/${PROJECT_NAME})
 
