@@ -21,7 +21,6 @@ void GamepadControl::timerCallback() {
     float vy = input.vy;
     float vyaw = input.vyaw;
 
-    RCLCPP_INFO(this->get_logger(), "Gamepad input: %f, %f, %f", vx, vy, vyaw);
     if (abs(vx) <= 1e-3 && abs(vy) <= 1e-3 && abs(vyaw) <= 1e-3) {
         sportClient_.StopMove(reqMsg_);
     } else {
