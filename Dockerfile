@@ -62,23 +62,40 @@ RUN bash -c "git clone https://github.com/unitreerobotics/unitree_sdk2.git /opt/
     cmake .. -DCMAKE_INSTALL_PREFIX=/opt/unitree_robotics && \
     make install"
 
-# Install mujoco-3.2.7
-RUN bash -c "git clone https://github.com/google-deepmind/mujoco.git /opt/mujoco && \
-    cd /opt/mujoco && \
+# Install cyclonedds
+RUN bash -c "cd ~ && \
+    git clone https://github.com/eclipse-cyclonedds/cyclonedds -b releases/0.10.x && \
+    cd cyclonedds && \
     mkdir build install && \
     cd build && \
-    cmake /opt/mujoco && \
-    cmake --build . && \
-    cmake /opt/mujoco -DCMAKE_INSTALL_PREFIX=/opt/mujoco/install && \
+    cmake .. -DCMAKE_INSTALL_PREFIX=../install && \
     cmake --build . --target install"
 
-# Install unitree_mujoco
-RUN bash -c "git clone https://github.com/unitreerobotics/unitree_mujoco.git /opt/unitree_mujoco && \
-    cd /opt/unitree_mujoco/simulate && \
-    mkdir build && \
-    cd build && \
-    cmake .. -DCMAKE_PREFIX_PATH=/opt/mujoco/install && \
-    make -j4"
+# Compile unitree_sdk2_python
+RUN bash -c "cd ~ && \
+    sudo apt install python3-pip && \
+    git clone https://github.com/unitreerobotics/unitree_sdk2_python.git && \
+    cd unitree_sdk2_python && \
+    export CYCLONEDDS_HOME="~/cyclonedds/install" && \
+    pip3 install -e ."
+
+# # Install mujoco-3.2.7
+# RUN bash -c "git clone https://github.com/google-deepmind/mujoco.git /opt/mujoco && \
+#     cd /opt/mujoco && \
+#     mkdir build install && \
+#     cd build && \
+#     cmake /opt/mujoco && \
+#     cmake --build . && \
+#     cmake /opt/mujoco -DCMAKE_INSTALL_PREFIX=/opt/mujoco/install && \
+#     cmake --build . --target install"
+
+# # Install unitree_mujoco
+# RUN bash -c "git clone https://github.com/unitreerobotics/unitree_mujoco.git /opt/unitree_mujoco && \
+#     cd /opt/unitree_mujoco/simulate && \
+#     mkdir build && \
+#     cd build && \
+#     cmake .. -DCMAKE_PREFIX_PATH=/opt/mujoco/install && \
+#     make -j4"
 
 # Create workspace directory
 WORKDIR /ws
