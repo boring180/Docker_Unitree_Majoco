@@ -1,8 +1,4 @@
 # Docker run script
-# Currently only support Mac
+# Currently only support Mac and Linux
 
-# Stop the ROS2 Foxy container
-docker stop go2_robot
-
-# Remove the stopped container
-docker rm go2_robot
+docker compose down

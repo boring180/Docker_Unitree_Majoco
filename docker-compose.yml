@@ -1,0 +1,32 @@
+services:
+  ros:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go2_robot
+    privileged: true
+    ports:
+      - "5900:5900"
+      - "6080:6080"
+    volumes:
+      - ./ws:/ws
+    environment:
+      - DISPLAY=:0
+      - VNC_RESOLUTION=1080x720
+    shm_size: 512m
+    hostname: localhost
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    networks:
+      unitree_net:
+        ipv4_address: 192.168.123.10
+
+networks:
+  unitree_net:
+    driver: macvlan
+    driver_opts:
+      parent: eth0
+    ipam:
+      config:
+        - subnet: 192.168.123.0/24
+          gateway: 192.168.123.1
