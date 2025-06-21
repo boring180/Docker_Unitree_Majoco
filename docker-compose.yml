@@ -18,15 +18,13 @@ services:
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
     networks:
-      unitree_net:
-        ipv4_address: 192.168.123.10
-
+      - unitree_net
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 networks:
   unitree_net:
-    driver: macvlan
-    driver_opts:
-      parent: eth0
+    driver: bridge
     ipam:
       config:
-        - subnet: 192.168.123.0/24
-          gateway: 192.168.123.1
+        - subnet: 172.20.0.0/16
+

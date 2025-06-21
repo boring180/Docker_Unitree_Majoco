@@ -37,6 +37,8 @@ RUN apt-get update && apt-get install -y \
     libyaml-cpp-dev \
     libxi-dev \
     libeigen3-dev \
+    iputils-ping \
+    iproute2 \
     && rm -rf /var/lib/apt/lists/* 
 
 # Update rosdep
