@@ -21,10 +21,15 @@ services:
       - unitree_net
     extra_hosts:
       - "host.docker.internal:host-gateway"
+
 networks:
   unitree_net:
-    driver: bridge
+    driver: macvlan
+    driver_opts:
+      parent: en5
     ipam:
       config:
-        - subnet: 172.20.0.0/16
+        - subnet: 192.168.123.0/24
+          gateway: 192.168.123.1
+
 
