@@ -13,23 +13,8 @@ services:
     environment:
       - DISPLAY=:0
       - VNC_RESOLUTION=1080x720
-    shm_size: 512m
+    shm_size: 2048m
     hostname: localhost
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
-    networks:
-      - unitree_net
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-
-networks:
-  unitree_net:
-    driver: macvlan
-    driver_opts:
-      parent: en5
-    ipam:
-      config:
-        - subnet: 192.168.123.0/24
-          gateway: 192.168.123.1
-
 
