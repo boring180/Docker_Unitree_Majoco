@@ -25,6 +25,17 @@ ENV CFLAGS="-march=armv8.3-a"
 ENV CXXFLAGS="-march=armv8.3-a"
 ```
 
+Meantime, please comment out the following line according to your processor in the Dockerfile:
+```bash
+RUN mkdir -p ~/miniconda3 && \
+# For Arm processors
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh && \
+# For x86 processors
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh && \
+    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 && \
+    rm ~/miniconda3/miniconda.sh
+```
+
 ## Attention for Windows users
 
 For Windows users, please uncomment the following line in the Dockerfile:
@@ -63,5 +74,6 @@ source ~/unitree_ros2/setup.sh
 cd /opt/unitree_mujoco/simulate/build
 ./unitree_mujoco
 ```
-
+Acknowledgement:
 ---
+This project used the repository [isaac-go2-ros2](https://github.com/Zhefan-Xu/isaac-go2-ros2).
