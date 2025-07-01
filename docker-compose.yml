@@ -6,13 +6,12 @@ services:
     container_name: go2_robot
     privileged: true
     ports:
-      - "5900:5900"
       - "6080:6080"
     volumes:
       - ./ws:/ws
     environment:
       - DISPLAY=:0
-      - VNC_RESOLUTION=1080x720
+      - VNC_RESOLUTION=1920x1080
     shm_size: 2048m
     hostname: localhost
     devices:
